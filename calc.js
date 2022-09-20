@@ -18,10 +18,21 @@
     // - can SQUARE ROOT
     // - can handle three or more numbers
 
-const firstNumber = prompt("First number: ");
-const operator = prompt("Operator: ");
-const secondNumber = prompt("Second number: ");
+// const num1 = prompt("First number: ");
+// const operator = prompt("Operator: ");
+// const num2 = prompt("Second number: ");
 
-alert(`${firstNumber} ${operator} ${secondNumber}`);
+// alert(`${num1} ${operator} ${num2}`);
 
 // CODE GOES HERE
+const calculate = (num1, num2, operator) => {
+    if (operator === "*") {
+        result = num1 * num2;
+    } else if (operator === "+") {
+        result = num1 + num2;
+    } else if (operator === "-") {
+       result = num1 - num2;
+    } else {
+        return num1/num2;
+    } 
+};
