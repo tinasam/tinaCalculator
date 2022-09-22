@@ -4,18 +4,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="calc.js"></script>
-</head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
     <nav class="navbar">
         <div class="calclogo">
             <h4>Tina's Calculator</h4>
         </div>
-
     </nav>
+
+    <div id="grid">
+        <div class="head">CE</div>
+        <div class="head">C</div>
+        <div class="head">Back</div>
+        <div class="head">/</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">*</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">-</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">+</div>
+        <div class="cell">+/-</div>
+        <div class="cell">0</div>
+        <div class="cell">.</div>
+        <div class="cell">=</div>
+      </div>
+
+
+<!-- This is where my scss begins for creating calculator -->
+    <!-- <div id="grid">
+        <div class="cell">Cell</div>
+        <div class="cell">cell</div>
+        <div class="cell">clear</div>
+        <div class="cell">Cell 7</div>
+        <div class="cell">Cell 8</div>
+        <div class="cell">Cell 9</div>
+    </div> -->
+
+  <!-- HTML CONTAINER -->
+    <!-- <div id="grid">
+        <div class="head">cell 1</div>
+        <div class="head">Header 2</div>
+        <div class="head">clear</div>
+    </div>
+
+    <script>
+    window.addEventListener("load", () => {
+        // (B1) DATA ARRAY
+        var data = [
+            ["CE", "C", "Clear", "Null"],
+            ["7", "8", "9", "/"],
+            ["4", "5", "6", "*"],
+            ["1", "2", "3", "+"],
+            ["+/-", "0", ".", "="]
+        ];
     
+        // (B2) LOOP + ADD CELLS
+        let container = document.getElementById("grid");
+        for (let i of data) { for (let j of i) {
+            let cell = document.createElement("div");
+            cell.innerHTML = j;
+            cell.className = "cell";
+            container.appendChild(cell);
+        }}
+    });
+    </script> -->
 
-
-    <script src="./calc.js"></script>
+    
+    <!-- <script src="./calc.js"></script> -->
 </body>
 </html>

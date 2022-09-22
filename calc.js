@@ -11,18 +11,23 @@
     // CALCULATE function uses FIRST NUMBER, SECOND NUMBER and OPERATOR to create the RESULT
 // RESULT is shown on the screen
 
+    
 
+
+    
+    
+    
 // CALCULATE FUNCTION
     // - can ADD, SUBTRACT, DIVIDE or MULTIPLY
     // - can PERCENTAGE
     // - can SQUARE ROOT
     // - can handle three or more numbers
 
-const num1 = Number(prompt("Enter the first number: "));
-const operator = prompt("Enter the operator: ");
-const num2 = Number(prompt("Second number: "));
-// const result = prompt(" The result is" + result);
-alert(`${num1} ${operator} ${num2}`);
+// const num1 = Number(prompt("Enter the first number: "));
+// const operator = prompt("Enter the operator: ");
+// const num2 = Number(prompt("Second number: "));
+// // const result = prompt(" The result is" + result);
+// alert(`${num1} ${operator} ${num2}`);
 
 // CODE below gives calculation for multiplication, addition, subtraction and division
 let result;
