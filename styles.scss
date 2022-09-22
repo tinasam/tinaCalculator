@@ -3,14 +3,14 @@
 #grid {
     display: grid;
     grid-template-columns: auto auto auto auto; 
-    grid-gap: 10px;
+    grid-gap: 5px;
   }
   /* (B) 1 COL ON SMALL SCREENS */
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:800px) {
     #grid { grid-template-columns: auto; }
   }
   /* (C) OPTIONAL FOR THE CELLS */
-  .head, .cell { padding: 10px; }
+  .head, .cell { padding: 5px; }
   .head {
     font-weight: bold;
     border: 1px solid #f18e8e;

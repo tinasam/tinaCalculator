@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.scss">
     </head>
 <body>
     <nav class="navbar">
@@ -14,42 +14,42 @@
     </nav>
 
     <div id="grid">
-        <div class="head">CE</div>
-        <div class="head">C</div>
-        <div class="head">Back</div>
-        <div class="head">/</div>
-        <div class="cell">7</div>
-        <div class="cell">8</div>
-        <div class="cell">9</div>
-        <div class="cell">*</div>
-        <div class="cell">4</div>
-        <div class="cell">5</div>
-        <div class="cell">6</div>
-        <div class="cell">-</div>
-        <div class="cell">1</div>
-        <div class="cell">2</div>
-        <div class="cell">3</div>
-        <div class="cell">+</div>
-        <div class="cell">+/-</div>
-        <div class="cell">0</div>
-        <div class="cell">.</div>
-        <div class="cell">=</div>
+        <div class="head" id="CE">CE</div>
+        <div class="head" id="clear">C</div>
+        <div class="head" id="back">Back</div>
+        <div class="head" id="div">/</div>
+        <div class="number">7</div>
+        <div class="number">8</div>
+        <div class="number">9</div>
+        <div class="MultSymbol">*</div>
+        <div class="number">4</div>
+        <div class="number">5</div>
+        <div class="number">6</div>
+        <div class="MinusSymbol">-</div>
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="addSymbol">+</div>
+        <div class="symbol">+/-</div>
+        <div class="number">0</div>
+        <div class="dotSymbol">.</div>
+        <div class="equalSymbol">=</div>
       </div>
 
 
 <!-- This is where my scss begins for creating calculator -->
     <!-- <div id="grid">
-        <div class="cell">Cell</div>
-        <div class="cell">cell</div>
-        <div class="cell">clear</div>
-        <div class="cell">Cell 7</div>
-        <div class="cell">Cell 8</div>
-        <div class="cell">Cell 9</div>
+        <div class="number">number</div>
+        <div class="number">number</div>
+        <div class="number">clear</div>
+        <div class="number">number 7</div>
+        <div class="number">number 8</div>
+        <div class="number">number 9</div>
     </div> -->
 
   <!-- HTML CONTAINER -->
     <!-- <div id="grid">
-        <div class="head">cell 1</div>
+        <div class="head">number 1</div>
         <div class="head">Header 2</div>
         <div class="head">clear</div>
     </div>
@@ -65,13 +65,13 @@
             ["+/-", "0", ".", "="]
         ];
     
-        // (B2) LOOP + ADD CELLS
+        // (B2) LOOP + ADD numberS
         let container = document.getElementById("grid");
         for (let i of data) { for (let j of i) {
-            let cell = document.createElement("div");
-            cell.innerHTML = j;
-            cell.className = "cell";
-            container.appendChild(cell);
+            let number = document.createElement("div");
+            number.innerHTML = j;
+            number.className = "number";
+            container.appendChild(number);
         }}
     });
     </script> -->

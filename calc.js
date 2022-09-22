@@ -1,4 +1,16 @@
 // User clicks a number button
+const clearCalc = document.querySelector("#CE");
+
+
+const clearCalc = document.querySelector("#clear");
+
+const clearCalc = document.querySelector("#back");
+
+const clearCalc = document.querySelector("#div");
+
+const callNumButton = document.querySelectorAll(".7");
+
+
     // User continues to click numbers
     // Each number is added to the FIRST NUMBER
     // FIRST NUMBER is shown on the screen
