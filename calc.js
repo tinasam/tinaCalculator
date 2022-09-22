@@ -18,13 +18,14 @@
     // - can SQUARE ROOT
     // - can handle three or more numbers
 
-// const num1 = prompt("First number: ");
-// const operator = prompt("Operator: ");
-// const num2 = prompt("Second number: ");
+const num1 = Number(prompt("Enter the first number: "));
+const operator = prompt("Enter the operator: ");
+const num2 = Number(prompt("Second number: "));
+// const result = prompt(" The result is" + result);
+alert(`${num1} ${operator} ${num2}`);
 
-// alert(`${num1} ${operator} ${num2}`);
-
-// CODE GOES HERE
+// CODE below gives calculation for multiplication, addition, subtraction and division
+let result;
 const calculate = (num1, num2, operator) => {
     if (operator === "*") {
         result = num1 * num2;
@@ -33,6 +34,8 @@ const calculate = (num1, num2, operator) => {
     } else if (operator === "-") {
        result = num1 - num2;
     } else {
-        return num1/num2;
+        result = num1/num2;
     } 
+    return result;
 };
+alert("the result is " + calculate(num1, num2, operator));
