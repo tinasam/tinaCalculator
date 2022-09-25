@@ -1,12 +1,12 @@
 // User clicks a number button
-const clearCalc = document.querySelector("#CE");
+const ceeEE = document.querySelector("#CE");
 
 
 const clearCalc = document.querySelector("#clear");
 
-const clearCalc = document.querySelector("#back");
+const backbutton = document.querySelector("#back");
 
-const clearCalc = document.querySelector("#div");
+const divbutton = document.querySelector("#div");
 
 const callNumButton = document.querySelectorAll(".7");
 

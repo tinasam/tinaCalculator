@@ -1,31 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  // box-sizing: border-box;
+}
 
-/* (A) 3 COLUMNS PER ROW */
-#grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto; 
-    grid-gap: 5px;
+body {
+  width: 100vw;
+  heigh: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: lightyellow;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* calc */
+ .calc {
+  width: 300px;
+  padding-bottom: 15px;
+  border-radius: 7px;
+  background-color: lightslategrey;
+  box-shadow: 5px 8px 8px -2pm rgba(0,0,0.61);
   }
-  /* (B) 1 COL ON SMALL SCREENS */
-  @media screen and (max-width:800px) {
-    #grid { grid-template-columns: auto; }
-  }
+
+// display
+.display {
+  width: 100%;
+  height: 80px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: burlywood;
+  color: #000;
+  text-align: right;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+// row
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+// button
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  background-color: #222;
+  color: #fff;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+// operator
+.operator {
+  background-color: #00ff44;
+  color: #000;
+}
+
+
+
+
+
+
+
+  // main {
+  //   background-color: khaki;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  //   padding: 20px;
+  //   margin-left: 25%;
+  //   margin-right: 25%;
+  //   border: 1px solid darkorange;
+  //   }
+.display-box {
+  border: 1px solid darkorange;
+  height: 40px;
+  width:60px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  // align-items: center;
+}
+
+  /* (A) 3 COLUMNS PER ROW */
+  // #grid {
+  //   display: grid;
+  //   width: 400px;
+  //   grid-template-columns: 1fr 1fr 1fr 1fr; 
+  //   grid-gap: 5px;
+  // }
+  // /* (B) 1 COL ON SMALL SCREENS */
+  // @media screen and (max-width:800px) {
+  //   #grid { grid-template-columns: auto; }
+  // }
   /* (C) OPTIONAL FOR THE CELLS */
-  .head, .cell { padding: 5px; }
-  .head {
-    font-weight: bold;
-    border: 1px solid #f18e8e;
-    background: #ffbfbf;
-  }
-  .cell {
-    border: 1px solid #c2ba3c;
-    background: #f8ffde;
-  }
+  // .head, .cell { padding: 5px; }
+  // .head {
+  //   font-weight: bold;
+  //   border: 1px solid #f18e8e;
+  //   background: #ffbfbf;
+  // }
+  // .cell {
+  //   border: 1px solid #c2ba3c;
+  //   background: #f8ffde;
+  // }
 
-/* 4 columns per row*/
-/* // #grid {
-//     display:grid;
-//     grid-template-columns: auto auto auto auto;
-//     // grid-column-start: auto;
-//     // grid-column-end: auto;
-// } */
+
 
