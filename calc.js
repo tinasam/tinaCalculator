@@ -9,6 +9,9 @@ const equalSymbol = document.querySelector("#equalSym");
 const posnegSymbyol = document.querySelector("#posnegSym");
 const entryScreen = document.querySelector("#calc-box_entry");
 const entryResult = document.querySelector("#calc-box_result");
+let num1;
+let num2;
+let operator;
 
 zero.addEventListener("click",(event) => {
     entryScreen.innerHTML = "0";
@@ -16,6 +19,7 @@ zero.addEventListener("click",(event) => {
 
 clearCalc.addEventListener("click", (event) => {
     entryScreen.innerHTML = " ";
+    entryResult.innerHTML = " ";
 });
 
 backbutton.addEventListener("click", (event) => {
@@ -28,9 +32,26 @@ callNumButton.forEach((number) => {
 })
 });
 
+symbol.forEach((opers) => {
+    opers.addEventListener("click" ,(event) => {
+        num1 = entryScreen.innerHTML;
+        console.log(num1);
+        entryScreen.innerHTML = opers.innerHTML;
+        operator = entryScreen.innerHTML;
+        entryScreen.innerHTML = " ";
+        console.log(operator);
+    })
+});
 
+
+equalSymbol.addEventListener("click", (event) => {
+    num2 = entryScreen.innerHTML;
+    console.log(num2);
+    entryScreen.innerHTML = "=";
+});
     
-    
+
+
     
 // CALCULATE FUNCTION
     // - can ADD, SUBTRACT, DIVIDE or MULTIPLY
@@ -45,17 +66,21 @@ callNumButton.forEach((number) => {
 // alert(`${num1} ${operator} ${num2}`);
 
 // CODE below gives calculation for multiplication, addition, subtraction and division
-// let result;
-// const calculate = (num1, num2, operator) => {
-//     if (operator === "*") {
-//         result = num1 * num2;
-//     } else if (operator === "+") {
-//         result = num1 + num2;
-//     } else if (operator === "-") {
-//        result = num1 - num2;
-//     } else {
-//         result = num1/num2;
-//     } 
-//     return result;
-// };
-// alert("the result is " + calculate(num1, num2, operator));
+const calculate = () => {
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    console.log(num1, num2);
+    if (operator == "*") {
+        entryResult.innerHTML = num1 * num2;
+    } else if (operator == "+") {
+        entryResult.innerHTML = num1 + num2;
+    } else if (operator == "-") {
+        entryResult.innerHTML = num1 - num2;
+    } else if (operator == "/") {
+        entryResult.innerHTML = num1/num2;
+    } else {
+        entryResult.innerHTML = "Not Valid";
+    }
+};
+
+equalSymbol.addEventListener("click", calculate);
