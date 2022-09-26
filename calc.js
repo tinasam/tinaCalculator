@@ -16,6 +16,22 @@
 // const callNumButton = document.querySelectorAll(".7");
 
 
+var changeToOrangeColor = () => {
+    document.getElementById("CE").style.color = "darkorange";
+}
+var changeToBlack = () => {
+    document.getElementById("CE").style.color = "black";
+}
+// var changeToOrangeColor = () => {
+//     document.getElementById("C").style.color = "darkorange";
+// }
+// var changeToBlack = () => {
+//     document.getElementById("C").style.color = "black";
+// }
+
+
+
+
     // User continues to click numbers
     // Each number is added to the FIRST NUMBER
     // FIRST NUMBER is shown on the screen

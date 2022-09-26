@@ -7,39 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <main>
-    <!-- <div class="navbar"> -->
-    <h3>Tina's Calculator</h3>
-    <div class="calc-box">
-        <div class="calc-box_entry">10</div>
-    </div>
-    <div class="calc-box">
-        <div class="calc-box_result">0</div>
-    </div>
+        <!-- <div class="navbar"> -->
+        <h3>Tina's Calculator</h3>
+        <div class="calc-box">
+            <div class="calc-box_entry">10</div>
+        </div>
+        <div class="calc-box">
+            <div class="calc-box_result">0</div>
+        </div>
 
-    <div id ="grid">
-        <div class="head" id="CE">CE</div>
-        <div class="head" id="clear">C</div>
-        <div class="head" id="back">Back</div>
-        <div class="head" id="div">/</div>
-        <div class="number">7</div>
-        <div class="number">8</div>
-        <div class="number">9</div>
-        <div class="MultSymbol">*</div>
-        <div class="number">4</div>
-        <div class="number">5</div>
-        <div class="number">6</div>
-        <div class="MinusSymbol">-</div>
-        <div class="number">1</div>
-        <div class="number">2</div>
-        <div class="number">3</div>
-        <div class="addSymbol">+</div>
-        <div class="symbol">+/-</div>
-        <div class="number">0</div>
-        <div class="dotSymbol">.</div>
-        <div class="equalSymbol">=</div>
-    </div>
+        <div id ="grid">
+            <div id="CE" onmouseover="changeToOrangeColor()" onmouseout="changeToBlack()">CE</div>
+            <div id="clear" onmouseover="changeToOrangeColor()" onmouseout="changeToBlack()">C</div>
+            <div class="head" id="back">Back</div>
+            <div class="head" id="div">/</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="MultSymbol">*</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="MinusSymbol">-</div>
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="addSymbol">+</div>
+            <div class="symbol">+/-</div>
+            <div class="number">0</div>
+            <div class="dotSymbol">.</div>
+            <div class="equalSymbol">=</div>
+        </div>
     </main>
     <script src="./calc.js"></script>
 </body>
