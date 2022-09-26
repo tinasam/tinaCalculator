@@ -1,10 +1,12 @@
 // User clicks a number button
-
 const zero = document.querySelector("#CE");
+// const zero = document.getElementById("#CE");
 const clearCalc = document.querySelector("#clear");
 const backbutton = document.querySelector("#back");
 const symbol = document.querySelectorAll(".symbol")
 const callNumButton = document.querySelectorAll(".number");
+const equalSymbol = document.querySelector("#equalSym");
+const posnegSymbyol = document.querySelector("#posnegSym");
 const entryScreen = document.querySelector("#calc-box_entry");
 const entryResult = document.querySelector("#calc-box_result");
 
@@ -16,8 +18,15 @@ clearCalc.addEventListener("click", (event) => {
     entryScreen.innerHTML = " ";
 });
 
+backbutton.addEventListener("click", (event) => {
+    entryScreen.innerHTML = " ";
+});
 
-    
+callNumButton.forEach((number) => {
+    number.addEventListener("click",(event)=>{
+    entryScreen.innerHTML += number.innerHTML;
+})
+});
 
 
     
