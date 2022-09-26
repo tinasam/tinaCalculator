@@ -36,6 +36,9 @@ main #grid {
   border: 2px solid darkorange;
   background: rgb(214, 176, 122);
 }
+main .hoverColor:hover {
+  color: darkorange;
+}
 
 /* (B) 1 COL ON SMALL SCREENS */
 /* calc */
