@@ -4,89 +4,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator by Tina</title>
-    <link rel="stylesheet" href="styles.scss">
-    </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     
-<!-- calculator -->
-<div class=" calc"></div>
-    
-    <!-- display -->
-    <input type="text" class="display" disabled>
-
-    <!-- keys -->
-    <div class="keys">
-
-        <!-- 4 rows of keys -->
-        <div class="row">
-            <button value=”7″>7</button>
-            <button value=”8″>8</button>
-            <button value=”9″>9</button>
-            <button value=”+” class=”operator”>+</button>
-        </div>
-
-        <div class="row">
-            <button value=”4″>4</button>
-            <button value=”5″>5</button>
-            <button value=”6″>6</button>
-            <button value=”-” class=”operator”>-</button>   
-        </div>
-
-        <div class="row">
-            <button value=”1″>1</button>
-            <button value=”2″>2</button>
-            <button value=”3″>3</button>
-            <button value=”*” class=”operator”>*</button>
-        </div>
-
-        <div class="row">
-            <button value=”C” class=”operator”>C</button>
-            <button value=”0″>0</button>
-            <button value=”/” class=”operator”>/</button>
-            <button value=”=” class=”operator”>=</button> 
-        </div>
+    <main>
+    <!-- <div class="navbar"> -->
+    <h3>Tina's Calculator</h3>
+    <div class="calc-box">
+        <div class="calc-box_entry">10</div>
     </div>
-</div>  
+    <div class="calc-box">
+        <div class="calc-box_result">0</div>
+    </div>
 
- 
+    <div id ="grid">
+        <div class="head" id="CE">CE</div>
+        <div class="head" id="clear">C</div>
+        <div class="head" id="back">Back</div>
+        <div class="head" id="div">/</div>
+        <div class="number">7</div>
+        <div class="number">8</div>
+        <div class="number">9</div>
+        <div class="MultSymbol">*</div>
+        <div class="number">4</div>
+        <div class="number">5</div>
+        <div class="number">6</div>
+        <div class="MinusSymbol">-</div>
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="addSymbol">+</div>
+        <div class="symbol">+/-</div>
+        <div class="number">0</div>
+        <div class="dotSymbol">.</div>
+        <div class="equalSymbol">=</div>
+    </div>
+    </main>
     <script src="./calc.js"></script>
 </body>
-</html>
+</html>  
 
 
 
-<!-- <nav class="navbar">
-    <div class="calclogo">
-        <h4>Tina's Calculator</h4>
-        <div>result = </div>
-        <div class = "result">0</div>    
-        </div> -->
 
-<!-- </nav>
-           <div id ="grid">
-            <div class="head" id="CE">CE</div>
-            <div class="head" id="clear">C</div>
-            <div class="head" id="back">Back</div>
-            <div class="head" id="div">/</div>
-            <div class="number">7</div>
-            <div class="number">8</div>
-            <div class="number">9</div>
-            <div class="MultSymbol">*</div>
-            <div class="number">4</div>
-            <div class="number">5</div>
-            <div class="number">6</div>
-            <div class="MinusSymbol">-</div>
-            <div class="number">1</div>
-            <div class="number">2</div>
-            <div class="number">3</div>
-            <div class="addSymbol">+</div>
-            <div class="symbol">+/-</div>
-            <div class="number">0</div>
-            <div class="dotSymbol">.</div>
-            <div class="equalSymbol">=</div>
-          </div>
-    </main> -->
-    
+
+
 
 
 <!-- This is where my scss begins for creating calculator -->
@@ -127,5 +90,49 @@
         }}
     });
     </script> -->
+
+
+
+    <!-- calculator -->
+<!-- <div class="calc"></div> -->
+    
+<!-- display -->
+<!-- <input type="text" class="display" disabled> -->
+
+
+<!-- keys -->
+<!-- <div class="calculator__keys"> -->
+
+    <!-- 4 rows of keys -->
+    <!-- <div class="row">
+        <button value=”7″>7</button>
+        <button value=”8″>8</button>
+        <button value=”9″>9</button>
+        <button value=”+” class=”operator”>+</button>
+    </div>
+
+    <div class="row">
+        <button value=”4″>4</button>
+        <button value=”5″>5</button>
+        <button value=”6">6</button>
+        <button value=”-” class=”operator”>-</button>   
+    </div> -->
+
+    <!-- <div class="row">
+        <button value=”1″>1</button>
+        <button value=”2″>2</button>
+        <button value=”3″>3</button>
+        <button value=”*” class=”operator”>*</button>
+    </div>
+
+    <div class="row">
+        <button value=”C” class=”operator”>C</button>
+        <button value=”0″>0</button>
+        <button value=”/” class=”operator”>/</button>
+        <button value=”=” class=”operator”>=</button> 
+    </div>
+</div>
+</div>   -->
+
 
     

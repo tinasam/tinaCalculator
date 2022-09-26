@@ -1,14 +1,19 @@
 // User clicks a number button
-const ceeEE = document.querySelector("#CE");
 
 
-const clearCalc = document.querySelector("#clear");
 
-const backbutton = document.querySelector("#back");
 
-const divbutton = document.querySelector("#div");
 
-const callNumButton = document.querySelectorAll(".7");
+// const ceeEE = document.querySelector("#CE");
+
+
+// const clearCalc = document.querySelector("#clear");
+
+// const backbutton = document.querySelector("#back");
+
+// const divbutton = document.querySelector("#div");
+
+// const callNumButton = document.querySelectorAll(".7");
 
 
     // User continues to click numbers
