@@ -22,7 +22,7 @@ clearCalc.addEventListener("click", (event) => {
 });
 
 backbutton.addEventListener("click", (event) => {
-    entryScreen.innerHTML = " ";
+    entryScreen.innerHTML = entryScreen.innerHTML.slice(0,-1);
 });
 
 callNumButton.forEach((number) => {
@@ -50,21 +50,6 @@ equalSymbol.addEventListener("click", (event) => {
 });
     
 
-
-    
-// CALCULATE FUNCTION
-    // - can ADD, SUBTRACT, DIVIDE or MULTIPLY
-    // - can PERCENTAGE
-    // - can SQUARE ROOT
-    // - can handle three or more numbers
-
-// const num1 = Number(prompt("Enter the first number: "));
-// const operator = prompt("Enter the operator: ");
-// const num2 = Number(prompt("Second number: "));
-// // const result = prompt(" The result is" + result);
-// alert(`${num1} ${operator} ${num2}`);
-
-// CODE below gives calculation for multiplication, addition, subtraction and division
 const calculate = () => {
     num1 = parseInt(num1);
     num2 = parseInt(num2);
