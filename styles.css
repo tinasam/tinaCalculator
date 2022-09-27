@@ -1,5 +1,5 @@
 * {
-  padding: 0px;
+  padding: 5px;
   margin: 0;
   box-sizing: border-box;
 }
@@ -37,7 +37,7 @@ main #grid {
   background: rgb(214, 176, 122);
 }
 main .hoverColor:hover {
-  color: darkorange;
+  color: rgb(157, 92, 11);
 }
 
 /* (B) 1 COL ON SMALL SCREENS */
