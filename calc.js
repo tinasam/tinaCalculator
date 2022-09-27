@@ -1,6 +1,5 @@
 // User clicks a number button
 const zero = document.querySelector("#CE");
-// const zero = document.getElementById("#CE");
 const clearCalc = document.querySelector("#clear");
 const backbutton = document.querySelector("#back");
 const symbol = document.querySelectorAll(".symbol")
