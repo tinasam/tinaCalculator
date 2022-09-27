@@ -37,7 +37,7 @@ main #grid {
   background: rgb(214, 176, 122);
 }
 main .hoverColor:hover {
-  color: rgb(157, 92, 11);
+  color: darkorange;
 }
 
 /* (B) 1 COL ON SMALL SCREENS */
